@@ -19,7 +19,7 @@ public class ProductController {
 
     @CrossOrigin("*")
     @ResponseStatus(HttpStatus.OK)
-    @GetMapping()
+    @GetMapping("/")
     public List<Product> search() throws Exception {
         return productRepository.search();
     }
